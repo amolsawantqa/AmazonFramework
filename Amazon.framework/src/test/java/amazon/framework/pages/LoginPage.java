@@ -22,9 +22,6 @@ public class LoginPage {
 	@FindBy(xpath="//input[@id='nav-cart-count-container']")WebElement cartbutton;
 	
 	
-	
-	
-	
 	public void loginToAmazon(String usernameApplication, String passwordApplication) 
 	{
 		try {
