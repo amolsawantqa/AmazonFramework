@@ -13,6 +13,7 @@ public class BrowserFactory {
 	public static WebDriver startApplication(WebDriver driver, String browserName, String appURL) 
 	{
 		System.out.println("In start application");
+		
 		 if(browserName.equals("Chrome"))
 		 {
 			 System.out.println("In chrome");
