@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>F:\Frameworks\AmazonFramework\Amazon.framework\testng.xml</span>
+                    <span>F:\Frameworks\AmazonFramework\Amazon.framework\XMLFiles\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,31 +93,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods,  3 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content skipped suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="amazon.framework.testcases.TestItemSearch" class="method navigator-link" hash-for-method="ItemSearchTest1">ItemSearchTest1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="amazon.framework.testcases.TestItemSearch" class="method navigator-link" hash-for-method="ItemSearchTest2">ItemSearchTest2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="amazon.framework.testcases.TestItemSearch" class="method navigator-link" hash-for-method="ItemSearchTest3">ItemSearchTest3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -129,9 +129,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="skipped.png"/>
               <span class="class-name">amazon.framework.testcases.TestItemSearch</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -140,6 +140,62 @@
                   <a name="ItemSearchTest1">
                   </a> <!-- ItemSearchTest1 -->
                   <span class="method-name">ItemSearchTest1</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;JUI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11.0.7&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x013A9563+2725219]
+	Ordinal0 [0x012A8551+1672529]
+	Ordinal0 [0x01190359+525145]
+	Ordinal0 [0x01120B77+68471]
+	Ordinal0 [0x0111D32C+54060]
+	Ordinal0 [0x0113CC37+183351]
+	Ordinal0 [0x0113CA3D+182845]
+	Ordinal0 [0x0113A94B+174411]
+	Ordinal0 [0x01122528+75048]
+	Ordinal0 [0x011235A0+79264]
+	Ordinal0 [0x01123539+79161]
+	Ordinal0 [0x012BD607+1758727]
+	GetHandleVerifier [0x014C6546+1050150]
+	GetHandleVerifier [0x014C6291+1049457]
+	GetHandleVerifier [0x014D10D7+1094071]
+	GetHandleVerifier [0x014C6B46+1051686]
+	Ordinal0 [0x012B5B06+1727238]
+	Ordinal0 [0x012BEB7B+1764219]
+	Ordinal0 [0x012BECE3+1764579]
+	Ordinal0 [0x012D4C05+1854469]
+	BaseThreadInitThunk [0x75556A14+36]
+	RtlInitializeExceptionChain [0x76F1AB4F+143]
+	RtlInitializeExceptionChain [0x76F1AB1A+90]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at amazon.framework.utility.BrowserFactory.startApplication(BrowserFactory.java:20)
+	at amazon.framework.testcases.BaseClass.setup(BaseClass.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -147,6 +203,62 @@
                   <a name="ItemSearchTest2">
                   </a> <!-- ItemSearchTest2 -->
                   <span class="method-name">ItemSearchTest2</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;JUI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11.0.7&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x013A9563+2725219]
+	Ordinal0 [0x012A8551+1672529]
+	Ordinal0 [0x01190359+525145]
+	Ordinal0 [0x01120B77+68471]
+	Ordinal0 [0x0111D32C+54060]
+	Ordinal0 [0x0113CC37+183351]
+	Ordinal0 [0x0113CA3D+182845]
+	Ordinal0 [0x0113A94B+174411]
+	Ordinal0 [0x01122528+75048]
+	Ordinal0 [0x011235A0+79264]
+	Ordinal0 [0x01123539+79161]
+	Ordinal0 [0x012BD607+1758727]
+	GetHandleVerifier [0x014C6546+1050150]
+	GetHandleVerifier [0x014C6291+1049457]
+	GetHandleVerifier [0x014D10D7+1094071]
+	GetHandleVerifier [0x014C6B46+1051686]
+	Ordinal0 [0x012B5B06+1727238]
+	Ordinal0 [0x012BEB7B+1764219]
+	Ordinal0 [0x012BECE3+1764579]
+	Ordinal0 [0x012D4C05+1854469]
+	BaseThreadInitThunk [0x75556A14+36]
+	RtlInitializeExceptionChain [0x76F1AB4F+143]
+	RtlInitializeExceptionChain [0x76F1AB1A+90]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at amazon.framework.utility.BrowserFactory.startApplication(BrowserFactory.java:20)
+	at amazon.framework.testcases.BaseClass.setup(BaseClass.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -154,14 +266,70 @@
                   <a name="ItemSearchTest3">
                   </a> <!-- ItemSearchTest3 -->
                   <span class="method-name">ItemSearchTest3</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 83
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;JUI&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 8.1&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.3&apos;, java.version: &apos;11.0.7&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x013A9563+2725219]
+	Ordinal0 [0x012A8551+1672529]
+	Ordinal0 [0x01190359+525145]
+	Ordinal0 [0x01120B77+68471]
+	Ordinal0 [0x0111D32C+54060]
+	Ordinal0 [0x0113CC37+183351]
+	Ordinal0 [0x0113CA3D+182845]
+	Ordinal0 [0x0113A94B+174411]
+	Ordinal0 [0x01122528+75048]
+	Ordinal0 [0x011235A0+79264]
+	Ordinal0 [0x01123539+79161]
+	Ordinal0 [0x012BD607+1758727]
+	GetHandleVerifier [0x014C6546+1050150]
+	GetHandleVerifier [0x014C6291+1049457]
+	GetHandleVerifier [0x014D10D7+1094071]
+	GetHandleVerifier [0x014C6B46+1051686]
+	Ordinal0 [0x012B5B06+1727238]
+	Ordinal0 [0x012BEB7B+1764219]
+	Ordinal0 [0x012BECE3+1764579]
+	Ordinal0 [0x012D4C05+1854469]
+	BaseThreadInitThunk [0x75556A14+36]
+	RtlInitializeExceptionChain [0x76F1AB4F+143]
+	RtlInitializeExceptionChain [0x76F1AB1A+90]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0(W3CHandshakeResponse.java:62)
+	at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0(HandshakeResponse.java:30)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:126)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:128)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at amazon.framework.utility.BrowserFactory.startApplication(BrowserFactory.java:20)
+	at amazon.framework.testcases.BaseClass.setup(BaseClass.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Frameworks\AmazonFramework\Amazon.framework\testng.xml</span>
+            <span class="header-content">F:\Frameworks\AmazonFramework\Amazon.framework\XMLFiles\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -214,20 +382,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'ItemSearchTest1')
 data.setCell(0, 2, 'amazon.framework.testcases.TestItemSearch')
-data.setCell(0, 3, 54);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'ItemSearchTest2')
+data.setCell(1, 1, 'ItemSearchTest3')
 data.setCell(1, 2, 'amazon.framework.testcases.TestItemSearch')
-data.setCell(1, 3, 12);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'ItemSearchTest3')
+data.setCell(2, 1, 'ItemSearchTest2')
 data.setCell(2, 2, 'amazon.framework.testcases.TestItemSearch')
-data.setCell(2, 3, 5);
+data.setCell(2, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 71 ms</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -255,36 +423,38 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">amazon.framework.testcases.TestItemSearch</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">ItemSearchTest1</span>
-                <span class="method-start">48116 ms</span>
+                <span class="method-start">4904 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=ItemSearchTest1 status=SUCCESS method=TestItemSearch.ItemSearchTest1()[pri:0, insta...)</span>
-                <span class="method-start">48187 ms</span>
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">4925 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ItemSearchTest2</span>
-                <span class="method-start">52107 ms</span>
+                <span class="method-start">4933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=ItemSearchTest2 status=SUCCESS method=TestItemSearch.ItemSearchTest2()[pri:0, insta...)</span>
-                <span class="method-start">52128 ms</span>
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">4962 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">ItemSearchTest3</span>
-                <span class="method-start">53388 ms</span>
+                <span class="method-start">4968 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownMethod([TestResult name=ItemSearchTest3 status=SUCCESS method=TestItemSearch.ItemSearchTest3()[pri:0, insta...)</span>
-                <span class="method-start">53396 ms</span>
+                <span class="method-name">tearDownMethod</span>
+                <span class="method-start">4989 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">54251 ms</span>
+                <span class="method-start">4997 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
